@@ -3,6 +3,12 @@
 # Check that tomcat is running well
 # Run this script after tomcat installation
 
+echo ""
+echo "Deploy Tomcat using Ansible"
+echo "---------------------------"
+ansible-playbook /data/deploy_tomcat.yml
+echo ""
+
 echo "Check java process and parameters"
 echo "---------------------------------"
 ps -ef | grep java

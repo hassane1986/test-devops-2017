@@ -1,4 +1,4 @@
-# TEST DEVOPS
+# TEST DEVOPS (~ entre 1h et 3h)
 
 Le but de cet exercice est d’automatiser le déploiement de tomcat avec Ansible et de tester ce déploiement dans un conteneur.
 

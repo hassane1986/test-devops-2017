@@ -23,10 +23,11 @@ Le but de cet exercice est d’automatiser le déploiement de tomcat avec Ansibl
 :warning: **ATTENTION** :warning: :  pour éviter des problèmes de démarrage de service à l’intérieur du conteneur, il faut le lancer avec l’option ```--privileged=true```
 
 Quelques points :
-- Le répertoire ```tomcat_deploy``` doit être monté en tant que volume dans le répertoire ```/data``` du container Docker afin de lancer le scripts de tests
-- L’environnement (DEV/PROD) doit être passé en paramètre de la commande Ansible avec ```--extra-vars="env=${ENVIRONMENT}"``` et permettre de configurer la taille maximum de la heap JVM en conséquence.
-- L’installation de tomcat, le déploiement du war et le paramétrage de la heap sont les seul paramètres attendus dans la configuration Ansible (faire au plus simple).
+- Le répertoire ```tomcat_deploy``` doit être **monté** en tant que dossier ```/data``` du container Docker afin de lancer le scripts de test.
+- L’environnement (DEV/PROD) est passé en paramètre de la commande Ansible avec ```--extra-vars="env=${ENVIRONMENT}"``` et permettre de configurer la taille maximum de la heap JVM en conséquence.
+- L’installation de tomcat, le déploiement du war et le paramétrage de la heap sont les seuls paramètres attendus dans la configuration Ansible (faire au plus simple).
 - Votre solution **doit** être rendue sous forme de **repository Git** (GitHub, autre repository Git en ligne, ou zip du repo git local).
+- Cet exercice a été testé avec la version **1.13.1** de docker. Si vous utilisez une version différente, veuillez la préciser.
 
 
 # Questions subsidiares

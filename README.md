@@ -30,5 +30,5 @@ Quelques points :
 - Cet exercice a été testé avec la version **1.13.1** de docker. Si vous utilisez une version différente, veuillez la préciser.
 
 
-# Questions subsidiares
+# Questions subsidiaires
 - que reprocheriez-vous à ce test ?
